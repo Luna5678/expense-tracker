@@ -5,6 +5,7 @@ const initialState = {
   transactions: [
     {
       text: "stimulus check",
+      date: "2021-11-01",
       amount: 600
     }
   ]

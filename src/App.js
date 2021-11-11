@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Balance from './components/Balance';
+import TransactionContainer from './components/TransactionContainer';
 import { GlobalProvider } from './context/GlobalState';
 import './App.css';
 
@@ -8,6 +9,7 @@ function App() {
     <GlobalProvider>
       <Header title="Track Your Expenses" />
       <Balance />
+      <TransactionContainer />
     </GlobalProvider>
   );
 }
