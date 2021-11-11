@@ -7,6 +7,11 @@ const initialState = {
       text: "stimulus check",
       date: "2021-11-01",
       amount: 600
+    },
+    {
+      text: "groceries",
+      date: "2021-11-02",
+      amount: -100
     }
   ]
 }
