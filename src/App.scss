@@ -70,3 +70,27 @@ $color-blue: #377381;
 .expense-text {
   color: $color-red;
 }
+
+.add-transaction-form {
+  margin: 0;
+  padding: 20px 20px;
+  box-shadow: 1px 1px 5px 2px rgba($color-green, 0.2);
+}
+
+.form-control {
+  margin: 0;
+  padding: 10px 0;
+}
+
+input {
+  font-family: $font-body;
+  border: none;
+  border-bottom: 2px solid $color-black;
+  font-size: 1rem;
+  padding: 3px 5px;
+}
+
+input[type="date"],
+input[type="number"] {
+  width: 150px;
+}
