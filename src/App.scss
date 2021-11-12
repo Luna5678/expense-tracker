@@ -57,3 +57,16 @@ $color-blue: #377381;
   display: grid;
   gap: 10px;
 }
+
+.transaction {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+}
+
+.transaction-amount {
+  text-align: end;
+}
+
+.expense-text {
+  color: $color-red;
+}
