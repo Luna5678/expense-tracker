@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+$font-body: "Roboto", sans-serif;
+$color-white: #f4f5f6;
+$color-black: #1c1f22;
+$color-orange: #e78123;
+$color-red: #b80012;
+$color-green: #296713;
+$color-brand: #7fc7b4;
+$color-blue: #377381;
+
+* {
+  font-family: $font-body;
+  background: $color-white;
+  color: $color-black;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.brand {
+  color: $color-brand;
+  margin: 0;
+}
+
+.heading {
+  color: $color-blue;
+  margin: 0;
+}
+
+.success {
+  color: $color-green;
+}
+
+.warning {
+  color: $color-orange;
+}
+
+.income-expense-container {
+  display: flex;
+  margin: 30px 0;
+  gap: 20px;
+}
+
+.income-expense-box {
+  text-align: center;
+  padding: 20px;
+  box-shadow: 1px 1px 5px 2px rgba($color-black, 0.2);
+}
+
+.transaction-container {
+  margin: 30px 0;
+  padding: 20px 20px;
+  width: 700px;
+  box-shadow: 1px 1px 5px 2px rgba($color-black, 0.2);
+  border-radius: 3px;
+  display: grid;
+  gap: 10px;
+}

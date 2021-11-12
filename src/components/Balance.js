@@ -6,7 +6,7 @@ const Balance = () => {
   const amountsArray = transactions.map(transaction => transaction.amount);
   const total = amountsArray.reduce((a,b) => a+b).toFixed(2);
   return (
-    <h2>Current cash balance: ${total} </h2>
+    <h2 className="heading">Current cash balance: ${total} </h2>
   )
 }
 

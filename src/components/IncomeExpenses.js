@@ -8,9 +8,17 @@ const IncomeExpenses = () => {
   const expense = Math.abs(amounts.filter(amount => amount < 0).reduce((a,b) => a+b)).toFixed(2);
 
   return (
-    <div>
-      Income: ${income}
-      Expense: ${expense}
+    <div className="income-expense-container">
+      <div className="income-expense-box">
+        <h3>
+        <span class="success">Income</span> ${income}
+        </h3>
+      </div>
+      <div className="income-expense-box">
+        <h3>
+        <span class="warning">Expense</span> ${expense}
+        </h3>
+      </div>
     </div>
   )
 }

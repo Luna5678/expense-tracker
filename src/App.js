@@ -3,12 +3,12 @@ import Balance from './components/Balance';
 import TransactionContainer from './components/TransactionContainer';
 import IncomeExpenses from './components/IncomeExpenses';
 import { GlobalProvider } from './context/GlobalState';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
     <GlobalProvider>
-      <Header title="Track Your Expenses" />
+      <Header title="Countrol" />
       <Balance />
       <IncomeExpenses />
       <TransactionContainer />
