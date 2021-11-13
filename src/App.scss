@@ -71,6 +71,7 @@ $color-blue: #377381;
 
 .edit-transaction-icon {
   color: rgba($color-black, 0.5);
+  transition: 0.3s;
 
   &:hover {
     color: $color-black;
@@ -127,7 +128,7 @@ input[type="number"] {
   width: 100px;
   font-family: $font-body;
   font-size: 1rem;
-  transition: 0.5s;
+  transition: 0.3s;
 
   &:hover {
     background: $color-blue;
