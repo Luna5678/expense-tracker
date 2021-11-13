@@ -5,7 +5,7 @@ import Transaction from "./Transaction";
 const TransactionContainer = () => {
   const { transactions } = useContext(GlobalContext);
   return (
-    <div className="transaction-container">
+    <div className="transaction-container box">
       <h2>Transaction History</h2>
       <hr />
     {transactions.map((transaction,idx) => <Transaction key={idx} transaction={transaction} />)}

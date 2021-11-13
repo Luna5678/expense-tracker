@@ -1,5 +1,9 @@
+import { useContext } from 'react';
+import { GlobalContext } from '../context/GlobalState';
+
 const Transaction = ({ transaction }) => {
   const dateString = new Date(transaction.date).toLocaleDateString();
+  const { removeTransaction } = useContext(GlobalContext);
 
   return (
     <div className="transaction">
@@ -10,6 +14,12 @@ const Transaction = ({ transaction }) => {
         ? `$${(transaction.amount).toFixed(2)}` 
         : `-$${Math.abs((transaction.amount)).toFixed(2)}`
         }
+      </p>
+      <p>
+        <i className="far fa-edit edit-transaction-icon"></i>
+      </p>
+      <p>
+        <i className="far fa-trash-alt edit-transaction-icon" onClick={() => removeTransaction(transaction.id)}></i>
       </p>
     </div>
   )
