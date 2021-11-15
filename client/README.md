@@ -1,3 +1,6 @@
+<h1>Countrol. Take control of your finances.</h1>
+<p>An MERN (MongoDB, ExpressJs, React, NodeJs) app to track your income and expenses so that you can improve your finances.</p>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
