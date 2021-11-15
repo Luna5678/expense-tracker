@@ -6,7 +6,7 @@ export default (state,action) => {
       return {
         transactions: [...state.transactions, action.payload]
       }
-    case 'REMOVE_TRANSACTION':
+    case 'DELETE_TRANSACTION':
       return {
         transactions: state.transactions.filter(transaction => transaction.id !== action.payload)
       }

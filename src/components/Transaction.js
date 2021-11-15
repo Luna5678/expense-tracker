@@ -3,7 +3,7 @@ import { GlobalContext } from '../context/GlobalState';
 
 const Transaction = ({ transaction }) => {
   const dateString = new Date(transaction.date).toLocaleDateString();
-  const { removeTransaction } = useContext(GlobalContext);
+  const { deleteTransaction } = useContext(GlobalContext);
 
   return (
     <div className="transaction">
@@ -19,7 +19,7 @@ const Transaction = ({ transaction }) => {
         <i className="far fa-edit edit-transaction-icon"></i>
       </p>
       <p>
-        <i className="far fa-trash-alt edit-transaction-icon" onClick={() => removeTransaction(transaction.id)}></i>
+        <i className="far fa-trash-alt edit-transaction-icon" onClick={() => deleteTransaction(transaction.id)}></i>
       </p>
     </div>
   )
