@@ -9,12 +9,6 @@ export const NavbarData = [
     className: 'nav-text'
   },
   {
-    title: 'Settings',
-    path: '/settings',
-    icon: <AiIcons.AiOutlineSetting />,
-    className: 'nav-text'
-  },
-  {
     title: 'Tracker',
     path: '/tracker',
     icon: <CgIcons.CgCalculator />,
@@ -26,4 +20,10 @@ export const NavbarData = [
     icon: <AiIcons.AiOutlineInfoCircle />,
     className: 'nav-text'
   },
+  {
+    title: 'Settings',
+    path: '/settings',
+    icon: <AiIcons.AiOutlineSetting />,
+    className: 'nav-text'
+  }
 ]

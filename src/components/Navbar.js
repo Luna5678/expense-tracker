@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import { NavbarData } from './NavbarData';
 
@@ -28,10 +28,10 @@ const Navbar = () => {
             </li>
             {NavbarData.map((item, idx) => {
               return(
-                <li key={idx} className={item.className}>
+                <li key={idx} className={item.className} onClick={showSidebar}>
                   <Link to={item.path}>
                     {item.icon}
-                    <span>{item.title}</span>
+                    <span className="nav-title">{item.title}</span>
                   </Link>
                 </li>
               )

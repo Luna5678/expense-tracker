@@ -1,29 +1,26 @@
-import Header from './components/Header';
-import Balance from './components/Balance';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import Navbar from './components/Navbar';
-import TransactionContainer from './components/TransactionContainer';
-import IncomeExpenses from './components/IncomeExpenses';
-import AddTransaction from './components/AddTransaction';
-import { GlobalProvider } from './context/GlobalState';
+import Home from './pages/Home';
+import Tracker from './pages/Tracker';
+import About from './pages/About';
+import Settings from './pages/Settings';
+
 import './App.scss';
 
 function App() {
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" />
+          <Route exact path='/' element={<Home />} />
+          <Route path='/tracker' element={<Tracker />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/settings' element={<Settings />} />
         </Routes>
-      </Router>
-      <GlobalProvider>
-        <Header title="Countrol" />
-        <Balance />
-        <IncomeExpenses />
-        <TransactionContainer />
-        <AddTransaction />
-      </GlobalProvider>
+      </BrowserRouter>
     </>
   );
 }
